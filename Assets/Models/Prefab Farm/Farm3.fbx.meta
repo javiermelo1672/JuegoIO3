@@ -1,0 +1,191 @@
+fileFormatVersion: 2
+guid: 6521bca4d1eaa064da1a9781e729dd7d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arbol
+    100002: Casa
+    100004: Cerca 1
+    100006: Cerca 2
+    100008: //RootNode
+    100010: Granero
+    100012: Ground
+    100014: Hemi
+    100016: Hemi.001
+    100018: Object001
+    100020: Object002
+    100022: Silo
+    100024: Tractor
+    100026: Tronco
+    400000: Arbol
+    400002: Casa
+    400004: Cerca 1
+    400006: Cerca 2
+    400008: //RootNode
+    400010: Granero
+    400012: Ground
+    400014: Hemi
+    400016: Hemi.001
+    400018: Object001
+    400020: Object002
+    400022: Silo
+    400024: Tractor
+    400026: Tronco
+    2100000: 'Material #4875'
+    2100002: 'Material #18299 Slot #72'
+    2100004: 'Material #4937'
+    2100006: 'Material #18299 Slot #78'
+    2100008: 'Material #18299 Slot #90'
+    2100010: 'Material #5076'
+    2100012: 'Material #5153'
+    2100014: 'Material #18299 Slot #84'
+    2100016: Grass
+    2100018: 'Material #18299 Slot #96'
+    2100020: 'Material #5004'
+    2100022: 'Material #5235'
+    2100024: 'Material #4818'
+    2100026: 'Material #18299 Slot #60'
+    2100028: 'Material #18299 Slot #66'
+    2100030: 'Material #4766'
+    2100032: 'Material #4719'
+    2100034: 05 - Default
+    2100036: grass 3
+    2100038: Dirt
+    2100040: barn
+    2100042: 'Material #12856'
+    2100044: 'Material #12855'
+    2100046: 'Material #12852'
+    2100048: barn 2
+    2100050: 'Material #12857'
+    2100052: 'Material #12854'
+    2100054: metal
+    2100056: grass 2
+    2100058: Dirt2
+    2100060: Dirt4
+    2100062: 03 - Default
+    2100064: 11 - Default
+    2100066: 'Material #18299 Slot #48'
+    2100068: 'Material #18299 Slot #27'
+    2300000: Arbol
+    2300002: Casa
+    2300004: Cerca 1
+    2300006: Cerca 2
+    2300008: Granero
+    2300010: Ground
+    2300012: Object001
+    2300014: Object002
+    2300016: Silo
+    2300018: Tractor
+    2300020: Tronco
+    3300000: Arbol
+    3300002: Casa
+    3300004: Cerca 1
+    3300006: Cerca 2
+    3300008: Granero
+    3300010: Ground
+    3300012: Object001
+    3300014: Object002
+    3300016: Silo
+    3300018: Tractor
+    3300020: Tronco
+    4300000: Casa
+    4300002: Tractor
+    4300004: Cerca 2
+    4300006: Cerca 1
+    4300008: Arbol
+    4300010: Tronco
+    4300012: Silo
+    4300014: Granero
+    4300016: Object002
+    4300018: Object001
+    4300020: Ground
+    7400000: Object002|Object001|Take 001|BaseLayer
+    7400002: Object002|Object002|Take 001|BaseLayer
+    7400004: Object001|Object001|Take 001|BaseLayer
+    7400006: Object001|Object002|Take 001|BaseLayer
+    9500000: //RootNode
+    10800000: Hemi
+    10800002: Hemi.001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
