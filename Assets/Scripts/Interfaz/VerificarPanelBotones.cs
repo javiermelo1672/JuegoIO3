@@ -20,6 +20,8 @@ public class VerificarPanelBotones : MonoBehaviour {
         BotonCosecharActivo();
         BotonDestruirActivo();
         BotonConstruirActivo();
+        BotonGraneroActivo();
+        BotonTiendaActivo();
     }
 
     public void BotonArarActivo()
@@ -79,13 +81,42 @@ public class VerificarPanelBotones : MonoBehaviour {
         }
     }
 
+    public void BotonGraneroActivo()
+    {
+        if (cuadricula.getCuadroDetectado() != null && cuadricula.getCuadroDetectado().transform.childCount == 1 && cuadricula.getCuadroDetectado().transform.GetChild(0).name == "Granero(Clone)")
+        {
+            panelBotonesHUD.transform.Find("BotonGranero").gameObject.SetActive(true);
+        }
+        else
+        {
+            panelBotonesHUD.transform.Find("BotonGranero").gameObject.SetActive(false);
+        }
+    }
+
+    public void BotonTiendaActivo()
+    {
+        if (cuadricula.getCuadroDetectado() != null && cuadricula.getCuadroDetectado().transform.childCount == 1 && cuadricula.getCuadroDetectado().transform.GetChild(0).name == "Tienda(Clone)")
+        {
+            panelBotonesHUD.transform.Find("BotonTienda").gameObject.SetActive(true);
+        }
+        else
+        {
+            panelBotonesHUD.transform.Find("BotonTienda").gameObject.SetActive(false);
+        }
+    }
+
+
     public void DesactivarTodosLosBotones()
     {
         panelBotonesHUD.transform.Find("BotonArar").gameObject.SetActive(false);
         panelBotonesHUD.transform.Find("BotonSembrar").gameObject.SetActive(false);
         panelBotonesHUD.transform.Find("BotonDestruir").gameObject.SetActive(false);
         panelBotonesHUD.transform.Find("BotonConstruir").gameObject.SetActive(false);
+        panelBotonesHUD.transform.Find("BotonGranero").gameObject.SetActive(false);
+        panelBotonesHUD.transform.Find("BotonTienda").gameObject.SetActive(false);
+
     }
+
 
 
 }

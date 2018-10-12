@@ -70,4 +70,22 @@ public class ControladorPanelBotones : MonoBehaviour {
         verificacionPanel.DesactivarTodosLosBotones();
     }
 
+    public void VerGranero()
+    {
+        /////////////////////////////////////////
+        /*
+         * INTERFAZ MOSTRANDO ELEMENTOS DENTRO DEL GRANERO (Inventario)
+        */
+        ////////////////////////////////////////
+    }
+
+    public void AbrirTienda()
+    {
+        /////////////////////////////////////////
+        /*
+         * INTERFAZ DE LA TIENDA PARA COMPRAR SEMILLAS/VENDER CULTIVOS
+        */
+        ////////////////////////////////////////
+    }
+
 }
