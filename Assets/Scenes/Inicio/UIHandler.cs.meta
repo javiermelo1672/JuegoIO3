@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - fb_GUISkin: {fileID: 11400000, guid: 14ab14e9b97f743dca62b51e1e369f07, type: 2}
+  - fb_GUISkin: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
