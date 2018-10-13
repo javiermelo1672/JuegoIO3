@@ -5817,6 +5817,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4944961705010388}
+  - component: {fileID: 114110283547090478}
+  - component: {fileID: 114377076099189276}
   m_Layer: 0
   m_Name: Mundo
   m_TagString: Untagged
@@ -11695,7 +11697,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1875950078432678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.18536447, y: -1.1859751, z: -0.96039987}
+  m_LocalPosition: {x: -0.202, y: -1.1859751, z: -0.96039987}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4999237203864750}
@@ -31374,3 +31376,42 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114110283547090478
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1875950078432678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6cceb7f73b7f7347852aee4f2e7e1f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuadricula: {fileID: 0}
+  canvas: {fileID: 0}
+  materialSombreado: {fileID: 2100000, guid: 7863fee47548d6a42a08d0918fd47534, type: 2}
+  materialNormal: {fileID: 2100016, guid: 6521bca4d1eaa064da1a9781e729dd7d, type: 3}
+--- !u!114 &114377076099189276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1875950078432678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ffff5e37af59540bf41d1d7207af45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuadricula: {fileID: 0}
+  capacidadGranero: 20
+  todosItems:
+  - {fileID: 1363291666933930, guid: 7435179973863eb41993a41052ff09d3, type: 2}
+  - {fileID: 1376439510205096, guid: f165d06efbd22c542a3f29980a48fb22, type: 2}
+  - {fileID: 1624776273802528, guid: 437d2ecefab2c7440964b89dd6965f25, type: 2}
+  - {fileID: 1123526449147350, guid: b312aef054f987e4aa1052dc1e6d0779, type: 2}
+  - {fileID: 1597303039608230, guid: 45e83f3acc08e524390c87f0a464ddc0, type: 2}
+  - {fileID: 1693479759392350, guid: 4455060d49af752488fd414b8406afe3, type: 2}
+  - {fileID: 1526744857907958, guid: da343f45de5c6f74290030e84eaf662f, type: 2}
+  - {fileID: 1842316462366944, guid: 04439e2c36c755d45a4fa4c39794c78d, type: 2}
+  - {fileID: 1782292101335266, guid: 20865c739f17fd14bb1adea83516ccdd, type: 2}
+  - {fileID: 1583421011018780, guid: fba1f32fe5b628042b470f696dc59783, type: 2}

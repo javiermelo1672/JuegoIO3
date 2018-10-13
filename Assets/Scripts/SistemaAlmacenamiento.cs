@@ -27,7 +27,7 @@ public class SistemaAlmacenamiento : MonoBehaviour {
         if (inventarioGranero.Count < ObtenerLimiteAlmacenamiento())
         {
 
-            GameObject item = new GameObject();
+            GameObject item;
             for (int i = 0; i < todosItems.Count; i++)
             {
                 if (todosItems[i].name == nombre)
