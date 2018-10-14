@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4950965549500670}
   - component: {fileID: 114974627344159162}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SemillaPapa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,3 +52,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icono: {fileID: 0}
+  tiempoLimite: 0
+  tiempoActual: 0
+  nombre: Semilla Papa

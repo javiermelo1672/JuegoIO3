@@ -7,6 +7,6 @@ public class Item: MonoBehaviour {
     public Sprite icono;
     public int tiempoLimite;
     public int tiempoActual;
-
+    public string nombre;
 
 }

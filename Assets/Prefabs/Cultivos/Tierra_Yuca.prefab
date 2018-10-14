@@ -10220,7 +10220,7 @@ GameObject:
   - component: {fileID: 33263291386242318}
   - component: {fileID: 23641945705962328}
   - component: {fileID: 65022068790075874}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Tierra_Yuca
   m_TagString: Untagged
   m_Icon: {fileID: 0}

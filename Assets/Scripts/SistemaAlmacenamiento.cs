@@ -16,12 +16,24 @@ public class SistemaAlmacenamiento : MonoBehaviour {
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            AgregarItem("A");
+            AgregarItem("SemillaPapa");
+            AgregarItem("SemillaMaiz");
+            AgregarItem("SemillaCafe");
+            AgregarItem("SemillaYuca");
+            AgregarItem("SemillaRemolacha");
+            AgregarItem("SemillaMaiz");
+            AgregarItem("SemillaMaiz");
+            AgregarItem("SemillaMaiz");
+            print("Hack Realizado");
         }
+
     }
 
+
+
+    //Agrega item: Lista de items: SemillaCafe, SemillaMaiz, SemillaPapa, SemillaRemolacha, SemillaYuca, Cafe, Maiz, Papa, Remolacha, Yuca
     public bool AgregarItem(string nombre)
     {
         if (inventarioGranero.Count < ObtenerLimiteAlmacenamiento())
@@ -56,10 +68,76 @@ public class SistemaAlmacenamiento : MonoBehaviour {
         return capacidad;
     }
 
+    public int ObtenerCantidadDeItem(string nombre)
+    {
+        int cantidad = 0;
+        for (int i = 0; i < inventarioGranero.Count; i++)
+        {
+            if (inventarioGranero[i].name == nombre)
+            {
+                cantidad = cantidad + 1;     
+            }
+        }
+        return cantidad;
+    }
+
+
+    /*
+     *LO SIGUIENTE ES USADO PARA MOSTRAR EN LA INTERFAZ DEL GRANERO(INVENTARIO)
+     * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     */
+    public string ObtenerTiemposItem(int i)
+    {
+        string tiempoActual = inventarioGranero[i].GetComponent<Item>().tiempoActual + "";
+        string tiempoLimite = inventarioGranero[i].GetComponent<Item>().tiempoLimite + "";
+        string tiempos = tiempoActual + " / " + tiempoLimite;
+        return tiempos;
+    }
+
+    public Sprite ObtenerSprite(int i)
+    {
+        return inventarioGranero[i].GetComponent<Item>().icono;
+    }
+
+    public string ObtenerNombre(int i)
+    {
+        return inventarioGranero[i].name;
+    }
+
+    /*
+     * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     */
+
+    //Aumenta tiempo de todos los items en 1 unidad de tiempo (1 minuto), Si el tiempoActual superó al tiempoLimite, el item se elimina de la lista
+    public void ActualizarTiempoDeItems()
+    {
+        for (int i = 0; i < inventarioGranero.Count; i++)
+        {
+            inventarioGranero[i].GetComponent<Item>().tiempoActual = inventarioGranero[i].GetComponent<Item>().tiempoActual + 1;
+        }
+        BorrarItemsExpirados();
+    }
+
+    public void BorrarItemsExpirados()
+    {
+        foreach(GameObject obj in inventarioGranero)
+        {
+            if(obj.GetComponent<Item>().tiempoActual> obj.GetComponent<Item>().tiempoLimite)
+            {
+                inventarioGranero.Remove(obj);
+                Destroy(obj);
+            }
+        }
+    }
 
     public List<GameObject> ObtenerInventario()
     {
         return inventarioGranero;
+    }
+
+    public List<GameObject> ObtenerListaItems()
+    {
+        return todosItems;
     }
 
 

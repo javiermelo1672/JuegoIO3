@@ -1063,7 +1063,7 @@ GameObject:
   - component: {fileID: 33171872840866058}
   - component: {fileID: 23453763697032398}
   - component: {fileID: 65482642360065878}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Tierra_Papa
   m_TagString: Untagged
   m_Icon: {fileID: 0}

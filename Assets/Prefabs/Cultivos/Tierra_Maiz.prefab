@@ -2413,7 +2413,7 @@ GameObject:
   - component: {fileID: 33537835662025116}
   - component: {fileID: 23187121373792880}
   - component: {fileID: 65459791299096510}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Tierra_Maiz
   m_TagString: Untagged
   m_Icon: {fileID: 0}

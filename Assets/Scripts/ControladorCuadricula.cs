@@ -218,4 +218,25 @@ public class ControladorCuadricula : MonoBehaviour {
         return cuadroDetectado;
     }
 
+    //Coloca el objeto ingresado, y se reemplaza por un objeto anterior, en el caso de que exista
+    public void colocarYReemplazarObjetoEnCuadro(GameObject objetoPrefab, GameObject cuadro)
+    {
+        GameObject objeto = Instantiate(objetoPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+        Destroy(cuadro.transform.GetChild(0).gameObject);
+        objeto.transform.parent = cuadro.transform;
+        objeto.transform.localPosition = new Vector3(0, 0.1f, 0);
+        cuadro = null;
+        
+    }
+
+    //Coloca el objeto ingresado, el cual debe ser una instancia
+    public void colocarYReemplazarOBJ(GameObject obj)
+    {
+        Destroy(cuadroDetectado.transform.GetChild(0).gameObject);
+        obj.transform.parent = cuadroDetectado.transform;
+        obj.transform.localPosition = new Vector3(0, 0.1f, 0);
+        cuadroDetectado = null;
+
+    }
+
 }

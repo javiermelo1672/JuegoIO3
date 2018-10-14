@@ -52,3 +52,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icono: {fileID: 0}
+  tiempoLimite: 0
+  tiempoActual: 0
+  nombre: Remolacha

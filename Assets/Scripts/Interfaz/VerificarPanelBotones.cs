@@ -50,11 +50,14 @@ public class VerificarPanelBotones : MonoBehaviour {
 
     public void BotonCosecharActivo()
     {
-        /////////////////////////////////////////
-        /*
-         * SE DEBE VERIFICAR QUE SEA UN TIPO DE CULTIVO, YA CRECIDO
-        */
-        ////////////////////////////////////////
+        if (cuadricula.getCuadroDetectado() != null && cuadricula.getCuadroDetectado().transform.childCount == 1 && cuadricula.getCuadroDetectado().transform.GetChild(0).gameObject.layer==12)
+        {
+            panelBotonesHUD.transform.Find("BotonCosechar").gameObject.SetActive(true);
+        }
+        else
+        {
+            panelBotonesHUD.transform.Find("BotonCosechar").gameObject.SetActive(false);
+        }
     }
 
     public void BotonDestruirActivo()
@@ -111,6 +114,7 @@ public class VerificarPanelBotones : MonoBehaviour {
         panelBotonesHUD.transform.Find("BotonArar").gameObject.SetActive(false);
         panelBotonesHUD.transform.Find("BotonSembrar").gameObject.SetActive(false);
         panelBotonesHUD.transform.Find("BotonDestruir").gameObject.SetActive(false);
+        panelBotonesHUD.transform.Find("BotonCosechar").gameObject.SetActive(false);
         panelBotonesHUD.transform.Find("BotonConstruir").gameObject.SetActive(false);
         panelBotonesHUD.transform.Find("BotonGranero").gameObject.SetActive(false);
         panelBotonesHUD.transform.Find("BotonTienda").gameObject.SetActive(false);

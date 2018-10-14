@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4774893604478410}
   - component: {fileID: 114808540077185276}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SemillaCafe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,3 +52,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icono: {fileID: 0}
+  tiempoLimite: 0
+  tiempoActual: 0
+  nombre: "Semilla Caf\xE9"
