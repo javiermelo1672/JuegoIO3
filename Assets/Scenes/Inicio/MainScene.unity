@@ -189,8 +189,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 910751961}
-        m_MethodName: SigninWithEmailAsync
+      - m_Target: {fileID: 11500000, guid: 7a7394bad7083994e8c1faaa10e0327f, type: 3}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
