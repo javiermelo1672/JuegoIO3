@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icono: {fileID: 0}
-  tiempoLimite: 0
+  tiempoLimite: 2
   tiempoActual: 0
   nombre: Papa
+  valor: 0

@@ -12,28 +12,10 @@ public class SistemaAlmacenamiento : MonoBehaviour {
     void Start()
     {
         inventarioGranero = new List<GameObject>();
+        InvokeRepeating("ActualizarTiempoDeItems", 60f, 60f);
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            AgregarItem("SemillaPapa");
-            AgregarItem("SemillaMaiz");
-            AgregarItem("SemillaCafe");
-            AgregarItem("SemillaYuca");
-            AgregarItem("SemillaRemolacha");
-            AgregarItem("SemillaMaiz");
-            AgregarItem("SemillaMaiz");
-            AgregarItem("SemillaMaiz");
-            print("Hack Realizado");
-        }
-
-    }
-
-
-
-    //Agrega item: Lista de items: SemillaCafe, SemillaMaiz, SemillaPapa, SemillaRemolacha, SemillaYuca, Cafe, Maiz, Papa, Remolacha, Yuca
+    //Agrega item: Lista de items: SemillaCafe, SemillaMaiz, SemillaPapa, SemillaRemolacha, SemillaYuca, ItemCafe, ItemMaiz, ItemPapa, ItemRemolacha, ItemYuca
     public bool AgregarItem(string nombre)
     {
         if (inventarioGranero.Count < ObtenerLimiteAlmacenamiento())
@@ -44,7 +26,8 @@ public class SistemaAlmacenamiento : MonoBehaviour {
             {
                 if (todosItems[i].name == nombre)
                 {
-                    item = todosItems[i];
+                    item = Instantiate(todosItems[i]);
+                    item.name = item.name.Replace("(Clone)", "");
                     inventarioGranero.Add(item);
                     return true;
                 }
@@ -115,6 +98,7 @@ public class SistemaAlmacenamiento : MonoBehaviour {
         {
             inventarioGranero[i].GetComponent<Item>().tiempoActual = inventarioGranero[i].GetComponent<Item>().tiempoActual + 1;
         }
+        print("Tiempo de Items Actualizado");
         BorrarItemsExpirados();
     }
 
@@ -126,9 +110,14 @@ public class SistemaAlmacenamiento : MonoBehaviour {
             {
                 inventarioGranero.Remove(obj);
                 Destroy(obj);
+                BorrarItemsExpirados();
+                break;
             }
         }
+        
     }
+
+
 
     public List<GameObject> ObtenerInventario()
     {
@@ -140,7 +129,19 @@ public class SistemaAlmacenamiento : MonoBehaviour {
         return todosItems;
     }
 
-
+    public bool BorrarItemSegunTipo(string tipo)
+    {
+        foreach (GameObject obj in inventarioGranero)
+        {
+            if (obj.name==tipo)
+            {
+                inventarioGranero.Remove(obj);
+                Destroy(obj);
+                return true;
+            }
+        }
+        return false;
+    }
 
 
 }

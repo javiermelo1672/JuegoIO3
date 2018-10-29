@@ -65,6 +65,7 @@ public class InterfazSembrar : MonoBehaviour {
             if (elemento.GetComponent<Item>().nombre==nombre) 
             {
                 sistemaAlmacenamiento.ObtenerInventario().Remove(elemento);
+                Destroy(elemento);
                 break;
             }
         }

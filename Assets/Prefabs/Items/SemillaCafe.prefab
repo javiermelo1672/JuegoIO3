@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icono: {fileID: 0}
-  tiempoLimite: 0
+  tiempoLimite: 7
   tiempoActual: 0
   nombre: "Semilla Caf\xE9"
+  valor: 10000

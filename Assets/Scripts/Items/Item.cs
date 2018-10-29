@@ -8,5 +8,5 @@ public class Item: MonoBehaviour {
     public int tiempoLimite;
     public int tiempoActual;
     public string nombre;
-
+    public int valor;
 }
